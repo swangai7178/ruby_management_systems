@@ -1,0 +1,12 @@
+<!-- app/views/shared/_sidebar.html.erb -->
+<nav class="w-64 h-screen bg-gray-800 text-white p-4 space-y-4">
+  <h2 class="text-xl font-bold mb-4">Menu</h2>
+  <ul>
+  <li class="mb-4"><a href="#" class="hover:underline">Home</a></li>
+  <li class="mb-4"><a href="#" class="hover:underline">Orders</a></li>
+  <li class="mb-4"><a href="#" class="hover:underline">Products</a></li>
+  <li class="mb-4"><a href="#" class="hover:underline">Reports</a></li>
+      <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "block py-2 hover:bg-red-600 rounded text-red-300" %>
+    </li>
+  </ul>
+</nav>
