@@ -20,7 +20,7 @@
         <%= link_to 'Profile', edit_user_registration_path, class: "px-4 py-2 bg-gray-200 text-gray-800 rounded" %>
         <%= link_to 'Settings', edit_user_registration_path, class: "px-4 py-2 bg-gray-200 text-gray-800 rounded" %>
          <%= current_user.email.split('@').first.capitalize %>
-        <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+        <%= link_to 'Logout', destroy_user_session_path, method::delete %>
       </div>
     </header>
 
