@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get "orders/new"
+  get "orders/show"
+  get "orders/index"
   resources :products
   get "dashboard/index"
   devise_for :users
